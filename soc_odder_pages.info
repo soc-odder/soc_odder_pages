@@ -22,6 +22,7 @@ features[variable][] = comment_form_location_soc_basic_page
 features[variable][] = comment_preview_soc_basic_page
 features[variable][] = comment_soc_basic_page
 features[variable][] = comment_subject_field_soc_basic_page
+features[variable][] = field_bundle_settings_node__soc_basic_page
 features[variable][] = language_content_type_soc_basic_page
 features[variable][] = menu_options_soc_basic_page
 features[variable][] = menu_parent_soc_basic_page
