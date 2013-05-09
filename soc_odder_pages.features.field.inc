@@ -63,18 +63,42 @@ function soc_odder_pages_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
+      'fences_wrapper' => 'div',
       'field_name' => 'body',
       'label' => 'Body',
-      'required' => FALSE,
+      'required' => 0,
       'settings' => array(
-        'display_summary' => TRUE,
-        'text_processing' => 1,
+        'better_formats' => array(
+          'allowed_formats' => array(
+            'filtered_html' => 0,
+            'plain_text' => 0,
+            'wysiwyg' => 'wysiwyg',
+          ),
+          'allowed_formats_toggle' => 1,
+          'default_order_toggle' => 0,
+          'default_order_wrapper' => array(
+            'formats' => array(
+              'filtered_html' => array(
+                'weight' => '0',
+              ),
+              'plain_text' => array(
+                'weight' => '10',
+              ),
+              'wysiwyg' => array(
+                'weight' => '0',
+              ),
+            ),
+          ),
+        ),
+        'display_summary' => 1,
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
+        'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'rows' => 20,
+          'rows' => '20',
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
