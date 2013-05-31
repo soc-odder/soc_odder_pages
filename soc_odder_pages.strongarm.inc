@@ -76,6 +76,9 @@ function soc_odder_pages_strongarm() {
         'redirect' => array(
           'weight' => '4',
         ),
+        'title' => array(
+          'weight' => '-5',
+        ),
       ),
       'display' => array(),
     ),

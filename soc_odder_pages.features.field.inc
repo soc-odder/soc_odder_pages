@@ -140,7 +140,7 @@ function soc_odder_pages_field_default_fields() {
       'bundle' => 'soc_basic_page',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'A field replacing node title.',
+      'description' => '',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -157,12 +157,12 @@ function soc_odder_pages_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'title_field',
-      'label' => 'Titel',
+      'label' => 'Title',
       'required' => TRUE,
       'settings' => array(
         'hide_label' => array(
-          'entity' => FALSE,
-          'page' => FALSE,
+          'entity' => 'entity',
+          'page' => 'page',
         ),
         'text_processing' => 0,
         'user_register_form' => FALSE,
@@ -173,16 +173,15 @@ function soc_odder_pages_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => '0',
+        'weight' => -5,
       ),
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('A field replacing node title.');
   t('Body');
-  t('Titel');
+  t('Title');
 
   return $fields;
 }
